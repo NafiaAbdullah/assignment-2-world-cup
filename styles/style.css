@@ -12,9 +12,8 @@ body {
 .................... */
 
 header {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
+    display: flex;
+    align-items: stretch;
     height: 600px;
     margin-top: 50px;
     margin-left: 140px;
@@ -28,12 +27,11 @@ header {
 }
 
 .description {
-    padding-top: 100px;
-
+    padding-top: 50px;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 0;
 }
@@ -63,3 +61,170 @@ h1 {
     margin-right: 70px;
     padding-top: 50px;
 }
+
+/* ..........................
+.........main part styles..
+............................ */
+
+.blog {
+    display: flex;
+    max-width: 80%;
+
+}
+
+.box-1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #161616;
+    padding: 20px;
+    margin-right: 24px;
+    margin-left: 100px;
+}
+
+.button-link button {
+    width: 250px;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.box-1 button a {
+    text-decoration: none;
+    color: #161616;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.box-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin-bottom: 100px;
+}
+
+.blogs {
+    width: 300px;
+    height: 360px;
+    box-shadow: 2px 2px 2px whitesmoke;
+    border-color: grey;
+}
+
+.blog-image {
+    width: 310px;
+    height: 175px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-details {
+    margin-left: 20px;
+}
+
+.blog-info button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #161616;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.blog-info p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #161616;
+}
+
+.icon {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#clock {
+    margin-right: 50px;
+}
+
+.fa-clock {
+    color: #B9B9B9;
+
+}
+
+.fa-message {
+    color: #B9B9B9;
+}
+
+/* .........................
+.........footer styles.......
+.............................. */
+footer {
+    background-color: #161616;
+    height: 400px;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding-top: 100px;
+}
+
+hr {
+    border: 1px solid gray;
+    width: 1300px;
+    margin-bottom: 50px;
+}
+
+.footer-items {
+    margin-bottom: 30px;
+}
+
+.footer-items a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500px;
+    color: #B9B9B9;
+    margin-right: 30px;
+
+}
+
+.social-icon {
+    background-color: white;
+    margin: 40px;
+    padding: 10px 0;
+}
+
+.fa-facebook-square {
+    margin-right: 100px;
+    font-size: 40px;
+    color: slateblue;
+}
+
+.fa-twitter-square {
+    margin-right: 100px;
+    font-size: 40px;
+    color: purple;
+}
+
+.fa-instagram-square {
+    margin-right: 100px;
+    font-size: 40px;
+    color: skyblue;
+}
+
+/* ...............................
+...........media query.............
+.................................... */
+/* ....mobile devices...............*/
